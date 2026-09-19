@@ -92,8 +92,6 @@ config:
 
 `ttl` is accepted as an alias for `expiration`, matching the name the store caches use. Setting both to a non-zero value is an error.
 
-`ttl` is accepted as an alias for `expiration`, matching the name the store caches use. Setting both is an error.
-
 If a `set` operation is skipped because of the item size is larger than `max_item_size`, this event is tracked by a counter metric `cortex_memcache_client_set_skip_total`.
 
 Other cache configuration parameters, you can refer to [memcached-index-cache](store.md#memcached-index-cache).
@@ -160,8 +158,6 @@ config:
 `expiration` specifies redis cache valid time. If set to 0s, so using a default of 24 hours expiration time.
 
 `ttl` is accepted as an alias for `expiration`, matching the name the store caches use. Setting both to a non-zero value is an error.
-
-`ttl` is accepted as an alias for `expiration`, matching the name the store caches use. Setting both is an error.
 
 Other cache configuration parameters, you can refer to [redis-index-cache](store.md#redis-index-cache).
 
