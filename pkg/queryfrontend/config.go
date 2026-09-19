@@ -94,7 +94,7 @@ type CacheProviderConfig struct {
 // `ttl` and the response cache spells it `expiration`; the two were never unified, so
 // `ttl` here used to abort startup instead of configuring anything. It returns nil when
 // the user set neither, so callers keep their own default. A key that is present but
-// zero does not count as set, so a config marshalled from the Go struct (which carries
+// zero does not count as set, so a config marshaled from the Go struct (which carries
 // both fields) is not mistaken for a conflict.
 func resolveCacheExpiration(backendConfig []byte) (*time.Duration, error) {
 	var probe struct {
